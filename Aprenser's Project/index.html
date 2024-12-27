@@ -1,176 +1,501 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+:root {
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aprenser's Project</title>
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
 
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Maven+Pro:wght@400..900&display=swap"
-    rel="stylesheet">
+html {
 
-</head>
+    width: 100%;
+    height: 100%;
+}
 
-<body>
+body {
 
-  <!--Logo-->
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
 
-  <div class="header-response">
+.header-response {
 
-    <header>
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
 
-      <div class="logo-picture">
+header {
 
-        <img src="./Imagens/logoAprenser.png" alt="Logo de um livro com Aprenser escrito em cima dele">
+    width: 1366px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 1);
+    padding: 0;
+    height: 10rem;
+}
 
-      </div>
+.header-response {
 
-      <div class="buttons">
+    background-color: rgba(42, 42, 42, 1);
+}
 
-        <ul>
+.logo-picture {
 
-          <a href="#main-courses">
-            <li>CURSOS</li>
-          </a>
-          <a href="#our-school">
-            <li>NOSSA ESCOLA</li>
-          </a>
-          <a href="#contacts">
-            <li>CONTATOS</li>
-          </a>
+    margin-top: 0;
+    margin-left: 7rem;
+    width: 20rem;
+    text-align: center;
+    height: 7rem;
+    padding-bottom: 20px;
 
-        </ul>
+}
 
-      </div>
+.logo-picture img {
 
-    </header>
+    margin-top: 0;
+    width: 164px;
+    height: 72px;
 
-  </div>
+}
 
-  <div class="content-responser">
+.buttons {
 
-    <section class="content-section">
+    margin-left: 55rem;
+    width: 50rem;
+    height: 6rem;
+    text-decoration: none;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-      <div class="content">
+.buttons ul {
 
-        <p class="content-paragraph">
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    color: rgba(254, 208, 1, 1);
+}
 
-          O saber é o que transforma nosso SER
+.buttons ul li {
 
-        </p>
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid rgba(254, 208, 1, 1);
+    cursor: pointer;
+    height: 16px;
+    width: 10rem;
+}
 
-        <p class="content-button">
+.buttons ul li:hover {
 
-          <a href="#">
+    transition: 0.2s;
+    padding: 10px 10px;
 
-            Saiba Mais
+}
 
-          </a>
+.buttons a {
 
-        </p>
+    text-decoration: none;
+    color: rgba(254, 208, 1, 1);
+}
 
-      </div>
+.content-responser {
 
-    </section>
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFF6D 73.5%, #FFFF38 100%);
+}
 
-  </div>
+.content-section {
 
-  <h2 class="catalog-h2" id="main-courses">Principais Cursos</h2>
+    width: 1266px;
+    height: 530px;
+    background-image: url(./Imagens/HeroImage.png);
+    background-repeat: no-repeat;
+    background-position: calc(68rem);
+    background-size: contain;
+    margin: 0 auto;
 
-  <div class="catalog-responser">
+}
 
-    <div class="catalog">
+div.content {
 
-      <div class="content-catalog-first">
+    margin: 12rem 0 0 15rem;
+    width: 40rem;
+    height: 28rem;
+    position: absolute;
+}
 
-        <ul>
-          <img src="./Imagens/curso-design.png" alt="">
-          <li class="first-title-li">Design para web</li>
-          <li class="first-text">O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs
-            atraentes e funcionais para sites e aplicativos móveis.</li>
-        </ul>
+p.content-paragraph {
 
-      </div>
+    font-size: 5rem;
+    justify-content: left;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    line-height: 7rem;
+    margin: 0;
+}
 
-      <div class="content-catalog-second">
+.content-button {
 
-        <ul>
-          <img src="./Imagens/curso-design-1.png" alt="">
-          <li class="second-title-li">Front End Developer</li>
-          <li class="second-text">Aprenda HTML, CSS e Javascript e crie interfaces ricas e semânticas para páginas web,
-            aplicativos on-line ou até mesmo aplicações para aparelhos celulares</li>
-        </ul>
+    width: 10rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+    text-align: center;
+    padding: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background-color: rgba(254, 208, 1, 1);
+}
 
-      </div>
+.content-button a {
 
-      <div class="content-catalog-third">
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
 
-        <ul>
-          <img src="./Imagens/curso-design-2.png" alt="">
-          <li class="third-title-li">Back End Developer</li>
-          <li class="third-text">Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de
-            banco de dados e aprenderá como funciona o protocolo HTTP na prática.
-          </li>
-        </ul>
+.content-button:hover {
 
-      </div>
+    transition: 0.2s;
+    padding: 12px 15px;
+}
 
-    </div>
+.catalog-h2 {
 
-  </div>
+    font-size: 30px;
+    width: 20%;
+    height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 10px;
+    font-family: Maven Pro;
+}
 
-  <div class="button-see-more-courses-responser">
+.catalog-responser {
 
-    <a href="#">
+    margin: 0 auto;
+    width: 100%;
+    height: 60%;
+    background: white;
+    margin-bottom: 100px;
+}
 
-      <div class="see-more-courses">Ver mais cursos</div>
+.catalog {
 
-    </a>
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(250, 250, 250);
+}
 
-  </div>
+.content-catalog-first {
 
-  <div class="our-school-responser">
+    margin-top: 28px;
+    width: 25rem;
+    max-height: 84%;
+    border-radius: 10px;
+    border: 0 dashed #fff;
+    filter: drop-shadow(10px 10px 10px rgba(2, 2, 2, .16));
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.87);
+    margin-bottom: 0;
+}
 
-    <section class="our-school" id="our-school">
+.content-catalog-first:hover {
 
-      <h1>Nossa escola</h1>
+    width: 26rem;
+    height: 86%;
+    transition: 0.4s;
+}
 
-      <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de
-        tecnologia
-        online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design
-        gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado
-        interativo
-        e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se
-        agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
+.content-catalog-first img {
 
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
 
-    </section>
+.content-catalog-first ul {
 
-  </div>
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
 
-  <div class="iframe" id="contacts">
+.first-text {
 
-    <h1>Contatos</h1>
+    list-style: none;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 15px;
+    width: 90%;
+    height: 45%;
+    border-radius: 10px;
+}
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.541504559287!2d-46.60084967192785!3d-23.63719809999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b5b975046cb%3A0xcadf6b4a3501a97c!2sR.%20Bernardino%20de%20Aguiar%2C%20123%20-%20Jardim%20Maria%20Estela%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004181-060!5e0!3m2!1sen!2sbr!4v1735046500758!5m2!1sen!2sbr"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  
-      <address>
-  
-        Av. da Liberdade, 1001 <br>
-        Tel.: +351 21 123 456E<br>
-        Email: contato@aprenser.com
-  
-      </address>
-  
-  </div>
+.content-catalog-first ul .first-title-li {
 
-</body>
+    margin-bottom: 13px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    align-items: center;
+    margin-left: 12px;
+}
 
-</html>
+.content-catalog-second {
+
+    margin-top: 28px;
+    justify-content: center;
+    width: 25rem;
+    max-height: 85%;
+    border: 0 dashed #fff;
+    filter: drop-shadow(10px 10px 10px rgba(2, 2, 2, .16));
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.content-catalog-second:hover {
+
+    width: 26rem;
+    height: 86%;
+    transition: 0.4s;
+}
+
+.content-catalog-second img {
+
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.content-catalog-second ul {
+
+    list-style: none;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.second-text {
+
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 15px;
+    width: 90%;
+    height: 45%;
+    border-radius: 10px;
+}
+
+.content-catalog-second ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.content-catalog-second ul .second-title-li {
+
+    margin-bottom: 13px;
+    font-size: 19px;
+    margin-left: 12px;
+}
+
+.content-catalog-third {
+
+    margin-top: 28px;
+    justify-content: center;
+    width: 25rem;
+    height: 85%;
+    filter: drop-shadow(10px 10px 10px rgba(2, 2, 2, .16));
+    background: #ffffff;
+    border: 0 dashed #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.content-catalog-third:hover {
+
+    width: 26rem;
+    height: 86%;
+    transition: 0.4s;
+}
+
+.content-catalog-third img {
+
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.content-catalog-third ul {
+
+    list-style: none;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.third-text {
+
+    list-style: none;
+    justify-content: left;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 15px;
+    width: 90%;
+    height: 45%;
+    border-radius: 10px;
+}
+
+.content-catalog-third ul .third-title-li {
+
+    margin-bottom: 13px;
+    font-size: 19px;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.button-see-more-courses-responser {
+
+    height: 38px;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.see-more-courses {
+
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 auto;
+    width: 14rem;
+    height: 1.8rem;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(254, 208, 1, 1);
+    cursor: pointer;
+}
+
+.button-see-more-courses-responser a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.see-more-courses:hover {
+
+    transition: 0.1s;
+    padding: 13px 13px;
+    height: 1.6rem;
+}
+
+.our-school-responser {
+
+    width: 100%;
+    height: 80%;
+    background-color: #003464;
+    margin-top: 8rem;
+}
+
+section.our-school  {
+
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position:calc(50px);
+    background-position-y: bottom;
+    background-image: url(./Imagens/nossa-escola.png);
+    width: 100%;
+    height: 100%;
+}
+
+.our-school-responser section.our-school h1{
+
+    margin-left: 74rem;
+    font-size: 40px;   
+    margin-top: 8rem; 
+    color: white;
+    font-family: Maven Pro;
+    width: 250px;
+    position: absolute;
+}
+
+section.our-school p {
+
+    font-family: inter;
+    color: white;
+    width: 490px;
+    height: 265.65;
+    font-size: 16px;
+    margin-left: 74rem;
+    line-height: 26.64px;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 18rem;
+}
+
+.iframe {
+
+    padding: 0;
+    margin: 50px auto;
+    width: 50%;
+}
+
+.iframe h1 {
+    font-family: Maven Pro;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+address {
+
+    color: black;
+    width: 400px;
+    height: 65.24px;
+    font-size: 15px;
+    text-align: left;
+    justify-items: baseline;
+    margin-left: 45%;
+    padding: 10px;
+    position: absolute;
+    margin-top: -70px;
+    line-height: 20px;
+    font-family: Maven Pro;
+}
